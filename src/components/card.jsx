@@ -2,7 +2,7 @@ import Button from "./button";
 
 function Card({ title, desc, status, onEdit, onDelete }) {
     return (
-        <div className="bg-white shadow rounded-lg p-4 text-center space-y-2">
+        <div className="bg-white shadow rounded-lg p-4 text-center space-y-2 border-4 border-double border-amber-600">
             <h3 className="font-semibold rounded-lg space-y-2">{title}</h3>
             <p className="text-sm rounded-lg space-y-2">{desc}</p>
             <p className="text-xs mt-2 text-blue-600 font-medium rounded-lg space-y-2">{status}</p>

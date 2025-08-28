@@ -29,8 +29,11 @@ function App() {
       <Closing text="To do List" />
 
       <Input label="Judul" name="title" value={form.title} onChange={handleChange} placeholder="Masukan judul..." />
+
       <Input label="Deskripsi" name="desc" value={form.desc} onChange={handleChange} placeholder="Masukan deskripsi." />
+
       <RadioGroup label="Status" name="status" options={["To do", "In Progress", "Done"]} value={form.status} onChange={handleChange} />
+
       <Button onClick={handleSubmit}>{editIndex !== null ? "Update" : "Tambah"}</Button>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6 mt-4 place-self-center">
